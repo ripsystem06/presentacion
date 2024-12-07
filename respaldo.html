@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación Visual de Jerseys</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="main-nav">
+        <a href="#inicio" class="nav-icon" aria-label="Ir al inicio">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </a>
+        <a href="#despedida" class="nav-icon" aria-label="Ir a la despedida">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" x2="4" y1="22" y2="15"/></svg>
+        </a>
+    </nav>
+
+    <main>
+        <section id="inicio" class="fullscreen-section">
+            <div class="logo-container">
+                <img src="img/LOGO STOLY.png" alt="Logo" class="logo pulse-animation">
+                <a href="#jersey-roja" class="pulse-button">Ver Jerseys</a>
+            </div>
+        </section>
+
+        <section id="jersey-roja" class="fullscreen-section jersey-page">
+            <div class="jersey-section">
+                <img src="img/JSR/jersey.png" alt="Jersey Roja" class="jersey-image" data-fullscreen="img/JSR/jerseyHD.png">
+                <div class="jersey-elements">
+                    <div class="element fade-in">
+                        <img src="img/JSR/twill.png" alt="Twill">
+                    </div>
+                    <div class="element fade-in">
+                        <img src="img/JSR/tela.png" alt="Trim Flex">
+                    </div>
+                    <div class="element fade-in">
+                        <img src="img/JSR/trim.png" alt="Base de agua">
+                    </div>
+                    <div class="element fade-in">
+                        <img src="img/JSR/base agua.png" alt="Color Palette">
+                    </div>
+                    <div class="element fade-in">
+                        <img src="img/JSR/trimflex.png" alt="Twill">
+                    </div>
+                    <div class="element fade-in">
+                        <img src="img/JSR/color palette.png" alt="Twill">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="jersey-blanca" class="fullscreen-section jersey-page">
+            <div class="jersey-section">
+                <img src="img/JSB/jersey.png" alt="Jersey Blanca" class="jersey-image" data-fullscreen="img/JSB/jersey_fullscreen.png">
+                <div class="jersey-elements">
+                    <div class="element fade-in">
+                        <h3>Trim Flex</h3>
+                        <img src="img/JSB/trimflex.png" alt="Trim Flex">
+                    </div>
+                    <div class="element fade-in">
+                        <h3>Base de agua</h3>
+                        <img src="img/JSB/base agua.png" alt="Base de agua">
+                    </div>
+                    <div class="element fade-in">
+                        <h3>Color Palette</h3>
+                        <img src="img/JSB/color palette.png" alt="Color Palette">
+                    </div>
+                    <div class="element fade-in">
+                        <h3>Twill</h3>
+                        <img src="img/JSB/twill.png" alt="Twill">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Repite la estructura para los otros jerseys (negra, cc, verde) -->
+
+        <section id="despedida" class="fullscreen-section">
+            <div class="content">
+                <h1 class="fade-in">¡Gracias por ver nuestra presentación!</h1>
+                <p class="fade-in">Esperamos que hayas disfrutado de nuestros jerseys.</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="navigation-buttons">
+        <button id="prev-button" class="nav-button jersey-nav" aria-label="Anterior">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <button id="next-button" class="nav-button jersey-nav" aria-label="Siguiente">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+    </div>
+
+    <div id="fullscreen-image" class="fullscreen-image">
+        <img src="" alt="Jersey en pantalla completa">
+        <button id="close-fullscreen" class="close-button">&times;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
